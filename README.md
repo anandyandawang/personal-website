@@ -4,7 +4,7 @@ A template Vue.js app with Bootstrap taken from Frank during my time working at 
 
 ## Instructions
 
-```bash
+``` bash
 npm install
 npm run serve
 ```
@@ -13,8 +13,9 @@ Now go to http://localhost:8080/
 
 ## Deployment
 
-```bash
+``` bash
 npm run build
 ```
 
-All generated files will be in the dist folder.
+All generated files will be in the ./dist folder.
+To deploy to GitHub pages, grab those files and put them into their own repo (preferably USERNAME.github.io as it automatically sets up the environment).
