@@ -2,7 +2,7 @@
   <div class="about">
     <b-container fluid>
       <b-row>
-        <b-col class="text-left">
+        <b-col class="mb-4 text-left">
           <b-row class="mb-4">
             <b-col>
               <h2>ABOUT&nbsp;ME</h2>
@@ -29,7 +29,9 @@
             </b-col>
           </b-row>
         </b-col>
-        <b-col class="text-right">IMAGE</b-col>
+        <b-col class="text-right img-tint">
+          <img class="img-fluid portrait" src="../assets/portrait.jpg">
+        </b-col>
       </b-row>
     </b-container>
   </div>
@@ -44,6 +46,10 @@
   padding-bottom: 18%;
   padding-left: 14%;
   padding-right: 14%;
+}
+
+.portrait {
+  min-width: 200px;
 }
 </style>
 

@@ -50,6 +50,11 @@ h3 {
   }
 }
 
+// TODO: work on getting images to tint
+.img-tint:before {
+  background: $background-highlight;
+}
+
 .btn {
   width: 100%;
   border: $border solid $black;
