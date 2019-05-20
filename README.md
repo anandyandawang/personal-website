@@ -13,8 +13,25 @@ Now go to http://localhost:8080/
 
 ## Deployment
 
+Go into vue.config.js and uncomment this line:
+
+```
+  // publicPath: "././"
+```
+
+Now enter this into terminal in your root dir:
+
 ```bash
 npm run build
 ```
 
-All generated files will be in the dist folder.
+This will generate a bunch of production-ready files in the ./dist folder.
+To deploy to GitHub pages, grab those files and put them into their own repo (preferably USERNAME.github.io as it automatically sets up the environment).
+
+Re-comment the line
+
+```
+  publicPath: "././"
+```
+
+when you want to test on localhost again.

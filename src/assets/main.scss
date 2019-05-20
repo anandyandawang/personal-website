@@ -1,13 +1,20 @@
 @import "./variables.scss";
-@import url("https://fonts.googleapis.com/css?family=Rubik");
+@import url("https://fonts.googleapis.com/css?family=Oxygen|Poiret+One");
 
 #app {
-  font-family: "Rubik", sans-serif;
+  font-family: "Oxygen", sans-serif;
 }
 
 h1 {
+  font-size: 144px !important;
+  font-family: "Poiret One", sans-serif !important;
+
   @media (max-width: $screen-sm) {
-    font-size: 1.5em;
+    font-size: 100px !important;
+  }
+
+  @media (max-width: $screen-xs) {
+    font-size: 72px !important;
   }
 }
 

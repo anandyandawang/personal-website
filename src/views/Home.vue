@@ -1,7 +1,7 @@
 <template>
   <div class="home">
-    <b-container fluid class="p-5">
-      <b-row>
+    <b-container>
+      <!-- <b-row>
         <b-col>component usage:</b-col>
       </b-row>
       <b-row>
@@ -11,6 +11,189 @@
       </b-row>
       <b-row>
         <b-col>stuff from content.json: {{ json.example }}</b-col>
+      </b-row>-->
+      <b-row>
+        <b-col class="text-left">LOGO</b-col>
+        <b-col>
+          <div class="position-fixed" style="right: 5vw">FAB</div>
+        </b-col>
+      </b-row>
+
+      <b-row>
+        <b-col md="12" class="text-left">
+          <h1>ANDY</h1>
+        </b-col>
+        <b-col md="12">
+          <h1>hexagon</h1>
+        </b-col>
+        <b-col md="12" class="text-right">
+          <h1>WANG</h1>
+        </b-col>
+      </b-row>
+      <b-row>
+        <b-col class="text-left">ANDY</b-col>
+        <b-col>HEXAGON</b-col>
+        <b-col class="text-right">WANG</b-col>
+      </b-row>
+      <b-row>
+        <b-col class="text-left">ANDY</b-col>
+        <b-col>HEXAGON</b-col>
+        <b-col class="text-right">WANG</b-col>
+      </b-row>
+      <b-row>
+        <b-col class="text-left">ANDY</b-col>
+        <b-col>HEXAGON</b-col>
+        <b-col class="text-right">WANG</b-col>
+      </b-row>
+      <b-row>
+        <b-col class="text-left">ANDY</b-col>
+        <b-col>HEXAGON</b-col>
+        <b-col class="text-right">WANG</b-col>
+      </b-row>
+      <b-row>
+        <b-col class="text-left">ANDY</b-col>
+        <b-col>HEXAGON</b-col>
+        <b-col class="text-right">WANG</b-col>
+      </b-row>
+      <b-row>
+        <b-col class="text-left">ANDY</b-col>
+        <b-col>HEXAGON</b-col>
+        <b-col class="text-right">WANG</b-col>
+      </b-row>
+      <b-row>
+        <b-col class="text-left">ANDY</b-col>
+        <b-col>HEXAGON</b-col>
+        <b-col class="text-right">WANG</b-col>
+      </b-row>
+      <b-row>
+        <b-col class="text-left">ANDY</b-col>
+        <b-col>HEXAGON</b-col>
+        <b-col class="text-right">WANG</b-col>
+      </b-row>
+      <b-row>
+        <b-col class="text-left">ANDY</b-col>
+        <b-col>HEXAGON</b-col>
+        <b-col class="text-right">WANG</b-col>
+      </b-row>
+      <b-row>
+        <b-col class="text-left">ANDY</b-col>
+        <b-col>HEXAGON</b-col>
+        <b-col class="text-right">WANG</b-col>
+      </b-row>
+      <b-row>
+        <b-col class="text-left">ANDY</b-col>
+        <b-col>HEXAGON</b-col>
+        <b-col class="text-right">WANG</b-col>
+      </b-row>
+      <b-row>
+        <b-col class="text-left">ANDY</b-col>
+        <b-col>HEXAGON</b-col>
+        <b-col class="text-right">WANG</b-col>
+      </b-row>
+      <b-row>
+        <b-col class="text-left">ANDY</b-col>
+        <b-col>HEXAGON</b-col>
+        <b-col class="text-right">WANG</b-col>
+      </b-row>
+      <b-row>
+        <b-col class="text-left">ANDY</b-col>
+        <b-col>HEXAGON</b-col>
+        <b-col class="text-right">WANG</b-col>
+      </b-row>
+      <b-row>
+        <b-col class="text-left">ANDY</b-col>
+        <b-col>HEXAGON</b-col>
+        <b-col class="text-right">WANG</b-col>
+      </b-row>
+      <b-row>
+        <b-col class="text-left">ANDY</b-col>
+        <b-col>HEXAGON</b-col>
+        <b-col class="text-right">WANG</b-col>
+      </b-row>
+      <b-row>
+        <b-col class="text-left">ANDY</b-col>
+        <b-col>HEXAGON</b-col>
+        <b-col class="text-right">WANG</b-col>
+      </b-row>
+      <b-row>
+        <b-col class="text-left">ANDY</b-col>
+        <b-col>HEXAGON</b-col>
+        <b-col class="text-right">WANG</b-col>
+      </b-row>
+      <b-row>
+        <b-col class="text-left">ANDY</b-col>
+        <b-col>HEXAGON</b-col>
+        <b-col class="text-right">WANG</b-col>
+      </b-row>
+      <b-row>
+        <b-col class="text-left">ANDY</b-col>
+        <b-col>HEXAGON</b-col>
+        <b-col class="text-right">WANG</b-col>
+      </b-row>
+      <b-row>
+        <b-col class="text-left">ANDY</b-col>
+        <b-col>HEXAGON</b-col>
+        <b-col class="text-right">WANG</b-col>
+      </b-row>
+      <b-row>
+        <b-col class="text-left">ANDY</b-col>
+        <b-col>HEXAGON</b-col>
+        <b-col class="text-right">WANG</b-col>
+      </b-row>
+      <b-row>
+        <b-col class="text-left">ANDY</b-col>
+        <b-col>HEXAGON</b-col>
+        <b-col class="text-right">WANG</b-col>
+      </b-row>
+      <b-row>
+        <b-col class="text-left">ANDY</b-col>
+        <b-col>HEXAGON</b-col>
+        <b-col class="text-right">WANG</b-col>
+      </b-row>
+      <b-row>
+        <b-col class="text-left">ANDY</b-col>
+        <b-col>HEXAGON</b-col>
+        <b-col class="text-right">WANG</b-col>
+      </b-row>
+      <b-row>
+        <b-col class="text-left">ANDY</b-col>
+        <b-col>HEXAGON</b-col>
+        <b-col class="text-right">WANG</b-col>
+      </b-row>
+      <b-row>
+        <b-col class="text-left">ANDY</b-col>
+        <b-col>HEXAGON</b-col>
+        <b-col class="text-right">WANG</b-col>
+      </b-row>
+      <b-row>
+        <b-col class="text-left">ANDY</b-col>
+        <b-col>HEXAGON</b-col>
+        <b-col class="text-right">WANG</b-col>
+      </b-row>
+      <b-row>
+        <b-col class="text-left">ANDY</b-col>
+        <b-col>HEXAGON</b-col>
+        <b-col class="text-right">WANG</b-col>
+      </b-row>
+      <b-row>
+        <b-col class="text-left">ANDY</b-col>
+        <b-col>HEXAGON</b-col>
+        <b-col class="text-right">WANG</b-col>
+      </b-row>
+      <b-row>
+        <b-col class="text-left">ANDY</b-col>
+        <b-col>HEXAGON</b-col>
+        <b-col class="text-right">WANG</b-col>
+      </b-row>
+      <b-row>
+        <b-col class="text-left">ANDY</b-col>
+        <b-col>HEXAGON</b-col>
+        <b-col class="text-right">WANG</b-col>
+      </b-row>
+      <b-row>
+        <b-col class="text-left">ANDY</b-col>
+        <b-col>HEXAGON</b-col>
+        <b-col class="text-right">WANG</b-col>
       </b-row>
     </b-container>
   </div>
@@ -41,4 +224,3 @@ export default Vue.extend({
   }
 });
 </script>
-`
