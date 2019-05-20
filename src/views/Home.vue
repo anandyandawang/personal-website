@@ -42,6 +42,7 @@
   background-color: $background-highlight;
   padding-left: 6%;
   padding-right: 6%;
+
   .home-graphic {
     margin-top: 10%;
     margin-bottom: 10%;
