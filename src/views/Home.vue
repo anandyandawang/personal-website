@@ -12,7 +12,7 @@
       <b-row>
         <b-col>stuff from content.json: {{ json.example }}</b-col>
       </b-row>-->
-      <b-row class="mb-5">
+      <b-row class="header">
         <b-col md="8" class="mb-4 text-left">
           <b-row>
             <b-col cols="4" sm="2" md="2">
@@ -34,7 +34,7 @@
         <b-col md="4" class="text-left">
           <img class="img-fluid" src="../assets/ANDY.svg">
         </b-col>
-        <b-col md="4">
+        <b-col md="4" class="my-5">
           <img class="img-fluid" src="../assets/hex.svg">
         </b-col>
         <b-col md="4" class="text-right wang-container">
@@ -217,6 +217,9 @@
   background-color: $background-highlight;
   padding-left: 6%;
   padding-right: 6%;
+}
+.header {
+  margin-bottom: 10%;
 }
 .fab {
   right: 6vw;
