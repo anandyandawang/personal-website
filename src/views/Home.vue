@@ -12,8 +12,8 @@
       <b-row>
         <b-col>stuff from content.json: {{ json.example }}</b-col>
       </b-row>-->
-      <b-row>
-        <b-col md="8" class="text-left">
+      <b-row class="mb-4">
+        <b-col md="8" class="mb-3 text-left">
           <b-row>
             <b-col cols="4" sm="2" md="2">
               <img class="img-fluid h-100 w-auto" src="../assets/logo.svg">
@@ -23,8 +23,10 @@
             </b-col>
           </b-row>
         </b-col>
-        <b-col md="4">
-          <div class="position-fixed" style="right: 5vw">FAB</div>
+        <b-col md="4" class="mb-3 d-flex align-items-center">
+          <div class="position-fixed" style="right: 5vw">
+            <img class="img-fluid h-100 w-auto" src="../assets/fab.svg">
+          </div>
         </b-col>
       </b-row>
 
