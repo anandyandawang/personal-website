@@ -3,14 +3,14 @@
     <b-container fluid>
       <b-row>
         <b-col class="text-left">
-          <b-row>
+          <b-row class="mb-4">
             <b-col>
               <h2>ABOUT&nbsp;ME</h2>
             </b-col>
           </b-row>
-          <b-row>
+          <b-row class="mb-3">
             <b-col>
-              <h3>I'm a developer.</h3>
+              <h3>I'm&nbsp;a&nbsp;developer.</h3>
             </b-col>
           </b-row>
           <b-row>

@@ -24,12 +24,30 @@ h2 {
   font-size: 72px !important;
   font-family: "Poiret One", sans-serif !important;
   letter-spacing: 20px;
+
+  @media (max-width: $screen-sm) {
+    font-size: 60px !important;
+    letter-spacing: 16px;
+  }
+
+  @media (max-width: $screen-xs) {
+    font-size: 36px !important;
+    letter-spacing: 8px;
+  }
 }
 
 h3 {
   font-size: 32px !important;
   font-weight: bold !important;
   color: $secondary !important;
+
+  @media (max-width: $screen-sm) {
+    font-size: 28px !important;
+  }
+
+  @media (max-width: $screen-xs) {
+    font-size: 22px !important;
+  }
 }
 
 .btn {
