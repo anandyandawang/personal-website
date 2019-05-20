@@ -5,7 +5,7 @@
         <b-col class="text-left">
           <b-row>
             <b-col>
-              <h2>ABOUT ME</h2>
+              <h2>ABOUT&nbsp;ME</h2>
             </b-col>
           </b-row>
           <b-row>

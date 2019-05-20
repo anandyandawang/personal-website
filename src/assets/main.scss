@@ -20,6 +20,18 @@ h1 {
   }
 }
 
+h2 {
+  font-size: 72px !important;
+  font-family: "Poiret One", sans-serif !important;
+  letter-spacing: 20px;
+}
+
+h3 {
+  font-size: 32px !important;
+  font-weight: bold !important;
+  color: $secondary !important;
+}
+
 .btn {
   width: 100%;
   border: $border solid $black;
