@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <b-container class="p-4">
+    <b-container class="p-4" fluid>
       <!-- <b-row>
         <b-col>component usage:</b-col>
       </b-row>
@@ -24,7 +24,7 @@
           </b-row>
         </b-col>
         <b-col md="4" class="mb-3 d-flex align-items-center">
-          <div class="position-fixed" style="right: 5vw">
+          <div class="position-fixed fab">
             <img class="img-fluid h-100 w-auto" src="../assets/fab.svg">
           </div>
         </b-col>
@@ -35,7 +35,7 @@
           <h1>ANDY</h1>
         </b-col>
         <b-col md="12">
-          <h1>hexagon</h1>
+          <img class="img-fluid h-100 w-auto" src="../assets/hex.svg">
         </b-col>
         <b-col md="12" class="text-right">
           <h1>WANG</h1>
@@ -215,6 +215,11 @@
 @import "../assets/variables.scss";
 .home {
   background-color: $background-highlight;
+  padding-left: 6%;
+  padding-right: 6%;
+}
+.fab {
+  right: 6vw;
 }
 </style>
 
