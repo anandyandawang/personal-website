@@ -3,11 +3,13 @@
 
 #app {
   font-family: "Oxygen", sans-serif;
+  color: $primary;
 }
 
 h1 {
   font-size: 144px !important;
   font-family: "Poiret One", sans-serif !important;
+  color: $primary;
 
   @media (max-width: $screen-sm) {
     font-size: 100px !important;

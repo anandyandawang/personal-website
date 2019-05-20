@@ -200,6 +200,11 @@
 </template>
 
 <style lang="scss">
+@import "../assets/main.scss";
+@import "../assets/variables.scss";
+.home {
+  background-color: $background-highlight;
+}
 </style>
 
 <script lang="ts">
