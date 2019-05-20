@@ -42,18 +42,18 @@
   background-color: $background-highlight;
   padding-left: 6%;
   padding-right: 6%;
-}
-.home-graphic {
-  margin-top: 10%;
-  margin-bottom: 10%;
-}
-.fab {
-  right: 6vw;
-}
-.wang-container {
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: column;
+  .home-graphic {
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+  .fab {
+    right: 6vw;
+  }
+  .wang-container {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+  }
 }
 </style>
 
