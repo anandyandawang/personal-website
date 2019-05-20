@@ -12,33 +12,33 @@
       <b-row>
         <b-col>stuff from content.json: {{ json.example }}</b-col>
       </b-row>-->
-      <b-row class="mb-4">
-        <b-col md="8" class="mb-3 text-left">
+      <b-row class="mb-5">
+        <b-col md="8" class="mb-4 text-left">
           <b-row>
             <b-col cols="4" sm="2" md="2">
-              <img class="img-fluid h-100 w-auto" src="../assets/logo.svg">
+              <img class="img-fluid" src="../assets/logo.svg">
             </b-col>
             <b-col cols="8" sm="10" md="10" class="d-flex align-items-center">
-              <img class="img-fluid h-100 w-auto" src="../assets/logo2.svg">
+              <img class="img-fluid" src="../assets/logo2.svg">
             </b-col>
           </b-row>
         </b-col>
-        <b-col md="4" class="mb-3 d-flex align-items-center">
+        <b-col md="4" class="mb-4 d-flex align-items-center">
           <div class="position-fixed fab">
-            <img class="img-fluid h-100 w-auto" src="../assets/fab.svg">
+            <img class="img-fluid" src="../assets/fab.svg">
           </div>
         </b-col>
       </b-row>
 
       <b-row>
-        <b-col md="12" class="text-left">
-          <h1>ANDY</h1>
+        <b-col md="4" class="text-left">
+          <img class="img-fluid" src="../assets/ANDY.svg">
         </b-col>
-        <b-col md="12">
-          <img class="img-fluid h-100 w-auto" src="../assets/hex.svg">
+        <b-col md="4">
+          <img class="img-fluid" src="../assets/hex.svg">
         </b-col>
-        <b-col md="12" class="text-right">
-          <h1>WANG</h1>
+        <b-col md="4" class="text-right wang-container">
+          <img class="img-fluid" src="../assets/WANG.svg">
         </b-col>
       </b-row>
       <b-row>
@@ -220,6 +220,11 @@
 }
 .fab {
   right: 6vw;
+}
+.wang-container {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
 }
 </style>
 
