@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <b-container class="p-4" fluid>
-      <b-row class="header">
+      <b-row>
         <b-col md="8" class="mb-4 text-left">
           <b-row>
             <b-col cols="4" sm="2" md="2">
@@ -19,7 +19,7 @@
         </b-col>
       </b-row>
 
-      <b-row>
+      <b-row class="home-graphic">
         <b-col md="4" class="text-left">
           <img class="img-fluid" src="../assets/ANDY.svg">
         </b-col>
@@ -38,11 +38,13 @@
 @import "../assets/main.scss";
 @import "../assets/variables.scss";
 .home {
+  min-height: 100vh;
   background-color: $background-highlight;
   padding-left: 6%;
   padding-right: 6%;
 }
-.header {
+.home-graphic {
+  margin-top: 10%;
   margin-bottom: 10%;
 }
 .fab {
