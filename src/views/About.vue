@@ -1,25 +1,35 @@
 <template>
   <div class="about">
-    <b-container class="p-4" fluid>
+    <b-container fluid>
       <b-row>
-        <b-col>
+        <b-col class="text-left">
           <b-row>
-            <b-col>TITLE</b-col>
+            <b-col>
+              <h2>ABOUT ME</h2>
+            </b-col>
           </b-row>
           <b-row>
-            <b-col>subtit</b-col>
+            <b-col>
+              <h3>I'm a developer.</h3>
+            </b-col>
           </b-row>
           <b-row>
-            <b-col>p1</b-col>
+            <b-col>
+              <p>paragraph goes here. paragraph goes here. paragraph goes here. paragraph goes here. paragraph goes here. paragraph goes here. paragraph goes here. paragraph goes here.</p>
+            </b-col>
           </b-row>
           <b-row>
-            <b-col>p2</b-col>
+            <b-col>
+              <p>paragraph goes here. paragraph goes here. paragraph goes here. paragraph goes here. paragraph goes here.</p>
+            </b-col>
           </b-row>
           <b-row>
-            <b-col>p3</b-col>
+            <b-col>
+              <p>paragraph goes here. paragraph goes here. paragraph goes here. paragraph goes here.</p>
+            </b-col>
           </b-row>
         </b-col>
-        <b-col>IMAGE</b-col>
+        <b-col class="text-right">IMAGE</b-col>
       </b-row>
     </b-container>
   </div>
@@ -30,8 +40,10 @@
 @import "../assets/variables.scss";
 .about {
   background-color: $background;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-top: 18%;
+  padding-bottom: 18%;
+  padding-left: 14%;
+  padding-right: 14%;
 }
 </style>
 
