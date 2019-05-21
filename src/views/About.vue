@@ -29,7 +29,7 @@
             </b-col>
           </b-row>
         </b-col>
-        <b-col class="text-right img-tint">
+        <b-col class="text-right">
           <img class="img-fluid portrait" src="../assets/portrait.jpg">
         </b-col>
       </b-row>

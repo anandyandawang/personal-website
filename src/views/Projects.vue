@@ -11,7 +11,7 @@
         </b-col>
       </b-row>
       <b-row>
-        <b-col v-for="project in json" :key="project.name" md="6" class="mb-5 text-left img-tint">
+        <b-col v-for="project in json" :key="project.name" md="6" class="mb-5 text-left">
           <img class="px-5 img-fluid project-pic" :src="project.imagePath">
           <div class="project-caption">
             <h3>{{project.name}}</h3>

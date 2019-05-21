@@ -4,13 +4,13 @@
     "type": "Personal Website",
     "desc": "put a brief description of the project here!",
     "github": "put github link to project here!",
-    "imagePath": "/img/portrait.jpg"
+    "imagePath": "/projects/personal-website.png"
   },
   "YIKES!": {
     "name": "YIKES!",
     "type": "2D Arcade Game",
     "desc": "put a brief description of the project here!",
     "github": "put github link to project here!",
-    "imagePath": "/img/portrait.jpg"
+    "imagePath": "/projects/yikes.webp"
   }
 }
