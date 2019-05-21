@@ -32,6 +32,9 @@
             hide-footer="true"
           >
             <project-clicked :project="project"></project-clicked>
+            <div class="px-5 mb-3">
+              <b-button variant="primary" @click="hideModal('project-modal' + project.name)">Close</b-button>
+            </div>
           </b-modal>
         </b-col>
       </b-row>
@@ -91,6 +94,11 @@ export default Vue.extend({
   mounted() {
     this.json = json;
     console.log(json);
+  },
+  methods: {
+    hideModal(id) {
+      this.$root.$emit("bv::hide::modal", id);
+    }
   }
 });
 </script>

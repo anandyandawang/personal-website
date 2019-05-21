@@ -52,41 +52,17 @@ h3 {
 
 .btn {
   width: 100%;
-  border: $border solid $black;
-  border-radius: 4px;
-
-  font-size: 20px;
-  line-height: 24px;
+  border: 0px !important;
 
   &.btn-primary {
-    color: $black;
-    background: $white;
+    color: $primary !important;
+    background: $background-highlight;
+    box-shadow: 0 0 0 0 !important;
 
-    &:hover {
-      color: $white;
-      background: $primary;
-    }
-
-    &:disabled {
-      color: #adaaaa;
-      background-color: rgba(161, 157, 101, 0.3);
-    }
-
-    &:enabled {
-      &:hover {
-        color: $white;
-        background: $primary;
-      }
-    }
-
-    &.active {
-      color: $black;
-      background-color: $primary;
-    }
-
-    &.any-class-here {
-      color: $black;
-      background-color: $primary;
+    &:hover,
+    &:focus,
+    &:active {
+      background: $secondary !important;
     }
   }
 }
