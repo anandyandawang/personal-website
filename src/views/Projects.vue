@@ -25,7 +25,12 @@
             </div>
           </div>
 
-          <b-modal :id="'project-modal' + project.name">
+          <b-modal
+            :id="'project-modal' + project.name"
+            size="lg"
+            hide-header="true"
+            hide-footer="true"
+          >
             <project-clicked :project="project"></project-clicked>
           </b-modal>
         </b-col>
@@ -43,25 +48,29 @@
   padding-bottom: 18%;
   padding-left: 7%;
   padding-right: 7%;
-}
 
-.project-pic-container {
-  display: flex;
-  justify-content: flex-end;
-  align-items: start;
-  flex-direction: column;
-}
+  .project-pic-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: start;
+    flex-direction: column;
+  }
 
-.project-pic {
-  opacity: 0.5;
-  min-width: 300px;
-  max-height: 300px;
-  object-fit: contain;
-}
+  .project-pic {
+    opacity: 0.5;
+    min-width: 300px;
+    max-height: 300px;
+    object-fit: contain;
+  }
 
-.project-caption {
-  position: absolute;
-  bottom: 0;
+  .project-caption {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .modal-body {
+    background: $background;
+  }
 }
 </style>
 

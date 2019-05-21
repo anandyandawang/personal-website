@@ -46,11 +46,11 @@
   padding-bottom: 18%;
   padding-left: 14%;
   padding-right: 14%;
-}
 
-.portrait {
-  opacity: 0.5;
-  min-width: 200px;
+  .portrait {
+    opacity: 0.5;
+    min-width: 200px;
+  }
 }
 </style>
 
