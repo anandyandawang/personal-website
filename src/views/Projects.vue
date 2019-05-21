@@ -11,7 +11,12 @@
         </b-col>
       </b-row>
       <b-row>
-        <b-col v-for="project in json" :key="project.name" md="6" class="mb-5 text-left">
+        <b-col
+          v-for="project in json"
+          :key="project.name"
+          md="6"
+          class="mb-5 text-left project-pic-container"
+        >
           <img class="px-5 img-fluid project-pic" :src="project.imagePath">
           <div class="project-caption">
             <h3>{{project.name}}</h3>
@@ -34,8 +39,18 @@
   padding-right: 7%;
 }
 
+.project-pic-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: start;
+  flex-direction: column;
+}
+
 .project-pic {
-  min-width: 200px;
+  opacity: 0.5;
+  min-width: 300px;
+  max-height: 300px;
+  object-fit: contain;
 }
 
 .project-caption {
