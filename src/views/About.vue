@@ -49,6 +49,7 @@
 }
 
 .portrait {
+  opacity: 0.5;
   min-width: 200px;
 }
 </style>
