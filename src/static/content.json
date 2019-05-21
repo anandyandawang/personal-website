@@ -1,6 +1,16 @@
 {
-  "example": {
-    "text": "hello world",
-    "phone": "4759349273"
+  "andywang99.github.io": {
+    "name": "andywang99.github.io",
+    "type": "Personal Website",
+    "desc": "put a brief description of the project here!",
+    "github": "put github link to project here!",
+    "imagePath": "/img/portrait.jpg"
+  },
+  "YIKES!": {
+    "name": "YIKES!",
+    "type": "2D Arcade Game",
+    "desc": "put a brief description of the project here!",
+    "github": "put github link to project here!",
+    "imagePath": "/img/portrait.jpg"
   }
 }
