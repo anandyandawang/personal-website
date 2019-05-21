@@ -11,10 +11,12 @@
         </b-col>
       </b-row>
       <b-row>
-        <b-col v-for="project in json" :key="project.name" md="6" class="text-right img-tint">
-          <img class="img-fluid project-card" :src="project.imagePath">
-          {{project.name}}
-          {{project.type}}
+        <b-col v-for="project in json" :key="project.name" md="6" class="mb-5 text-left img-tint">
+          <img class="px-5 img-fluid project-pic" :src="project.imagePath">
+          <div class="project-caption">
+            <h3>{{project.name}}</h3>
+            <p>{{project.type}}</p>
+          </div>
         </b-col>
       </b-row>
     </b-container>
@@ -32,8 +34,13 @@
   padding-right: 7%;
 }
 
-.project-card {
+.project-pic {
   min-width: 200px;
+}
+
+.project-caption {
+  position: absolute;
+  bottom: 0;
 }
 </style>
 
