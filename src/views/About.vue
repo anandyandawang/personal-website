@@ -10,22 +10,17 @@
           </b-row>
           <b-row class="mb-3">
             <b-col>
-              <h3>I'm&nbsp;a&nbsp;developer.</h3>
+              <h3>Developer.&nbsp;Wanderer.</h3>
             </b-col>
           </b-row>
           <b-row>
             <b-col>
-              <p>paragraph goes here. paragraph goes here. paragraph goes here. paragraph goes here. paragraph goes here. paragraph goes here. paragraph goes here. paragraph goes here.</p>
+              <p>Hi there! I'm a second year student studying Computer Science at the University of Waterloo. I have a keen interest in bringing responsive web applications to life in the browser with HTML, CSS, and JavaScript.</p>
             </b-col>
           </b-row>
           <b-row>
             <b-col>
-              <p>paragraph goes here. paragraph goes here. paragraph goes here. paragraph goes here. paragraph goes here.</p>
-            </b-col>
-          </b-row>
-          <b-row>
-            <b-col>
-              <p>paragraph goes here. paragraph goes here. paragraph goes here. paragraph goes here.</p>
+              <p>On my spare time, I love to take long walks and jogs around my neighbourhood as well as on community trails. I am also just beginning to dip my feet into learning visual art.</p>
             </b-col>
           </b-row>
         </b-col>
