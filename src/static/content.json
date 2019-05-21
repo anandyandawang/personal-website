@@ -2,15 +2,16 @@
   "Portfolio": {
     "name": "Portfolio",
     "type": "Personal Website",
-    "desc": "put a brief description of the project here!",
-    "github": "put github link to project here!",
+    "desc": "A website that I created to showcase myself and some of the awesome projects that I have worked on. Personally designed by myself in Sketch, and built using HTML, CSS, and JavaScript with Bootstrap and Vue.js frameworks.",
+    "github": "https://github.com/AndyWang99/personal-website",
     "imagePath": "/projects/personal-website.png"
   },
   "YIKES!": {
     "name": "YIKES!",
     "type": "2D Arcade Game",
-    "desc": "put a brief description of the project here!",
-    "github": "put github link to project here!",
+    "desc": "An endless vertical runner where, you, the player, guides a ball through a maze of platforms by tilting and tapping on your phone. This game is also available in multiplayer! Created in Java using the LibGDX framework with the Box2D physics engine. Multiplayer support added using a Node.js server with Express.js and Socket.io.",
+    "github": "https://github.com/AndyWang99/YIKES",
+    "gplay": "https://play.google.com/store/apps/details?id=com.sodirea.yikes&hl=en_SG",
     "imagePath": "/projects/yikes.webp"
   }
 }

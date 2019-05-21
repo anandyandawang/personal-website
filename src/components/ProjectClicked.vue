@@ -20,7 +20,16 @@
           </b-row>
           <b-row>
             <b-col>
-              <p>Checkout the GitHub repo here: {{project.github}}</p>
+              <a :href="project.github" target="_blank">
+                <p>Checkout the GitHub repo here!</p>
+              </a>
+            </b-col>
+          </b-row>
+          <b-row v-if="project.gplay != null">
+            <b-col>
+              <a :href="project.gplay" target="_blank">
+                <p>Checkout the app on Google Play here!</p>
+              </a>
             </b-col>
           </b-row>
         </b-col>
