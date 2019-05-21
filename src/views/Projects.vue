@@ -17,11 +17,17 @@
           md="6"
           class="mb-5 text-left project-pic-container"
         >
-          <img class="px-5 img-fluid project-pic" :src="project.imagePath">
-          <div class="project-caption">
-            <h3>{{project.name}}</h3>
-            <p>{{project.type}}</p>
+          <div v-b-modal="'project-modal' + project.name">
+            <img class="px-5 img-fluid project-pic" :src="project.imagePath">
+            <div class="project-caption">
+              <h3>{{project.name}}</h3>
+              <p>{{project.type}}</p>
+            </div>
           </div>
+
+          <b-modal :id="'project-modal' + project.name">
+            <project-clicked :project="project"></project-clicked>
+          </b-modal>
         </b-col>
       </b-row>
     </b-container>
@@ -61,9 +67,13 @@
 
 <script lang="ts">
 import Vue from "vue";
+import ProjectClicked from "@/components/ProjectClicked.vue";
 var json = require("@/static/content.json");
 export default Vue.extend({
   name: "projects",
+  components: {
+    ProjectClicked
+  },
   data() {
     return {
       json: {}
