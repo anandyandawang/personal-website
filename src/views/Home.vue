@@ -20,14 +20,20 @@
       </b-row>
 
       <b-row class="home-graphic">
-        <b-col md="4" class="text-left">
-          <img class="img-fluid" src="../assets/ANDY.svg">
+        <b-col md="4" class="text-left andy-container">
+          <transition name="slide-right-fade" appear>
+            <img class="img-fluid" src="../assets/ANDY.svg">
+          </transition>
         </b-col>
-        <b-col md="4" class="my-5">
-          <img class="img-fluid" src="../assets/hex.svg">
+        <b-col md="4" class="my-5 hex">
+          <transition name="rotate-fade" appear>
+            <img class="img-fluid" src="../assets/hex.svg">
+          </transition>
         </b-col>
         <b-col md="4" class="text-right wang-container">
-          <img class="img-fluid" src="../assets/WANG.svg">
+          <transition name="slide-left-fade" appear>
+            <img class="img-fluid" src="../assets/WANG.svg">
+          </transition>
         </b-col>
       </b-row>
     </b-container>
@@ -47,13 +53,46 @@
     margin-top: 10%;
     margin-bottom: 10%;
   }
+
   .fab {
     right: 6vw;
   }
+
+  .andy-container {
+    .slide-right-fade-enter {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+
+    .slide-right-fade-enter-active {
+      transition: all 1s ease;
+    }
+  }
+
   .wang-container {
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
+
+    .slide-left-fade-enter {
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+
+    .slide-left-fade-enter-active {
+      transition: all 1s ease;
+    }
+  }
+
+  .hex {
+    .rotate-fade-enter {
+      opacity: 0;
+      transform: rotate(360deg);
+    }
+
+    .rotate-fade-enter-active {
+      transition: all 1s ease;
+    }
   }
 }
 </style>
