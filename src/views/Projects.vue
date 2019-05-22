@@ -96,7 +96,7 @@ export default Vue.extend({
     console.log(json);
   },
   methods: {
-    hideModal(id) {
+    hideModal(id: any) {
       this.$root.$emit("bv::hide::modal", id);
     }
   }
