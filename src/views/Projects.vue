@@ -18,7 +18,9 @@
           class="mb-5 text-left project-pic-container"
         >
           <div v-b-modal="'project-modal' + project.name">
-            <img class="px-5 img-fluid project-pic" :src="project.imagePath">
+            <div class="px-5">
+              <img class="img-fluid project-pic" :src="project.imagePath">
+            </div>
             <div class="project-caption">
               <h3>{{project.name}}</h3>
               <p>{{project.type}}</p>
@@ -60,10 +62,16 @@
   }
 
   .project-pic {
-    opacity: 0.5;
     min-width: 300px;
     max-height: 300px;
     object-fit: contain;
+    opacity: 0.5;
+    transition: 0.2s;
+
+    &:hover {
+      opacity: 1;
+      transform: scale(1.3);
+    }
   }
 
   .project-caption {
