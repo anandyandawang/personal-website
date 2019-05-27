@@ -62,7 +62,7 @@
   }
 
   .project-pic {
-    min-width: 300px;
+    min-width: 200px;
     max-height: 300px;
     object-fit: contain;
     opacity: 0.5;
