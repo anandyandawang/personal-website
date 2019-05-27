@@ -14,7 +14,8 @@
         </b-col>
         <b-col md="4" class="mb-4 d-flex align-items-center">
           <div class="position-fixed fab" @click="toggleMenu()">
-            <img class="img-fluid" src="../assets/fab.svg">
+            <img class="img-fluid" v-if="!showMenu" src="../assets/fab.svg">
+            <img class="img-fluid" v-else src="../assets/fab-close.svg">
           </div>
           <!-- this is Menu.vue. overlays a full-screen nav menu that is fixed positioned -->
           <nav-menu v-if="showMenu == true"></nav-menu>

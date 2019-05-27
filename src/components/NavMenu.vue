@@ -4,9 +4,21 @@
       <b-container>
         <b-row>
           <b-col>
-            <b-row>home</b-row>
-            <b-row>about</b-row>
-            <b-row>projects</b-row>
+            <b-row>
+              <b-col>
+                <h2>home</h2>
+              </b-col>
+            </b-row>
+            <b-row>
+              <b-col>
+                <h2>about</h2>
+              </b-col>
+            </b-row>
+            <b-row>
+              <b-col>
+                <h2>projects</h2>
+              </b-col>
+            </b-row>
           </b-col>
         </b-row>
       </b-container>
@@ -15,6 +27,7 @@
 </template>
 
 <style lang="scss">
+@import "../assets/main.scss";
 @import "../assets/variables.scss";
 .nav-menu {
   position: fixed;
@@ -23,7 +36,7 @@
   z-index: 1; // index of fab is higher than the menu, so that the button for toggling remains consistent
   width: 100vw;
   height: 100vh;
-  background: rgba($background-highlight, 0.8);
+  background: rgba($background-highlight, 1);
 }
 
 .expand-enter,
@@ -32,12 +45,12 @@
 }
 
 .expand-enter-active {
-  transition: transform 1s ease;
+  transition: transform 0.3s ease;
   transform-origin: top right;
 }
 
 .expand-leave-active {
-  transition: transform 1s ease;
+  transition: transform 0.3s ease;
   transform-origin: top right;
 }
 </style>
