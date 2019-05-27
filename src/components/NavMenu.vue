@@ -1,5 +1,5 @@
 <template>
-  <transition>
+  <transition name="expand">
     <div class="nav-menu">
       <b-container>
         <b-row>
@@ -24,6 +24,21 @@
   width: 100vw;
   height: 100vh;
   background: rgba($background-highlight, 0.8);
+}
+
+.expand-enter,
+.expand-leave-to {
+  transform: scale(0);
+}
+
+.expand-enter-active {
+  transition: transform 1s ease;
+  transform-origin: top right;
+}
+
+.expand-leave-active {
+  transition: transform 1s ease;
+  transform-origin: top right;
 }
 </style>
 
