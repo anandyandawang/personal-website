@@ -60,6 +60,11 @@
   .fab {
     right: 6vw;
     z-index: 2;
+    transition: 0.3s;
+
+    &:hover {
+      opacity: 0.65;
+    }
   }
 
   .andy-container {
