@@ -6,17 +6,23 @@
           <b-col>
             <b-row>
               <b-col @click="scrollToSection('home')">
-                <div class="menu-item">home</div>
+                <div class="menu-item">HOME</div>
               </b-col>
             </b-row>
             <b-row>
               <b-col @click="scrollToSection('about')">
-                <div class="menu-item">about</div>
+                <div class="menu-item">ABOUT</div>
               </b-col>
             </b-row>
             <b-row>
               <b-col @click="scrollToSection('projects')">
-                <div class="menu-item">projects</div>
+                <div class="menu-item">PROJECTS</div>
+              </b-col>
+            </b-row>
+            <b-row class="social-media">
+              <b-col>
+                <img class="img-fluid" src="../assets/linkedin.svg">
+                <img class="img-fluid" src="../assets/github.svg">
               </b-col>
             </b-row>
           </b-col>
@@ -42,7 +48,6 @@
   align-items: center;
   padding-top: 10%;
   padding-bottom: 10%;
-
   padding-left: 18%;
   padding-right: 18%;
 
@@ -57,18 +62,26 @@
   }
 
   .menu-item {
-    font-size: 100px !important;
+    font-size: 72px !important;
     font-family: "Poiret One", sans-serif !important;
-    letter-spacing: 24px;
+    letter-spacing: 16px;
 
     @media (max-width: $screen-sm) {
-      font-size: 84px !important;
-      letter-spacing: 20px;
+      font-size: 60px !important;
+      letter-spacing: 14px;
     }
 
     @media (max-width: $screen-xs) {
-      font-size: 64px !important;
-      letter-spacing: 14px;
+      font-size: 48px !important;
+      letter-spacing: 12px;
+    }
+  }
+
+  .social-media {
+    margin-top: 7%;
+
+    img {
+      margin-right: 4%;
     }
   }
 }
