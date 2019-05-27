@@ -13,9 +13,11 @@
           </b-row>
         </b-col>
         <b-col md="4" class="mb-4 d-flex align-items-center">
-          <div class="position-fixed fab">
+          <div class="position-fixed fab" @click="toggleMenu()">
             <img class="img-fluid" src="../assets/fab.svg">
           </div>
+          <!-- this is Menu.vue. overlays a full-screen nav menu that is fixed positioned -->
+          <nav-menu v-if="showMenu == true"></nav-menu>
         </b-col>
       </b-row>
 
@@ -56,6 +58,7 @@
 
   .fab {
     right: 6vw;
+    z-index: 2;
   }
 
   .andy-container {
@@ -99,23 +102,24 @@
 
 <script lang="ts">
 import Vue from "vue";
-import HelloWorld from "@/components/HelloWorld.vue";
-var json = require("@/static/content.json");
-// @ is an alias to /src
+import NavMenu from "@/components/NavMenu.vue";
 
 export default Vue.extend({
   name: "home",
   components: {
-    HelloWorld
+    NavMenu
   },
   data() {
+    let showMenu = false;
+
     return {
-      json: {}
+      showMenu
     };
   },
-  mounted() {
-    this.json = json;
-    console.log(json);
+  methods: {
+    toggleMenu() {
+      this.showMenu = !this.showMenu;
+    }
   }
 });
 </script>
