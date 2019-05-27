@@ -6,17 +6,23 @@
           <b-col>
             <b-row>
               <b-col>
-                <h2>home</h2>
+                <a href="#home" @click="emitClickedEvent()">
+                  <h2>home</h2>
+                </a>
               </b-col>
             </b-row>
             <b-row>
               <b-col>
-                <h2>about</h2>
+                <a href="#about" @click="emitClickedEvent()">
+                  <h2>about</h2>
+                </a>
               </b-col>
             </b-row>
             <b-row>
               <b-col>
-                <h2>projects</h2>
+                <a href="#projects" @click="emitClickedEvent()">
+                  <h2>projects</h2>
+                </a>
               </b-col>
             </b-row>
           </b-col>
@@ -59,6 +65,11 @@
 <script lang="ts">
 import Vue from "vue";
 export default Vue.extend({
-  name: "nav-menu"
+  name: "nav-menu",
+  methods: {
+    emitClickedEvent() {
+      this.$emit("menu-item-clicked"); // emit event to tell the home vue to close the menu
+    }
+  }
 });
 </script>

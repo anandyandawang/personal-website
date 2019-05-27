@@ -1,5 +1,5 @@
 <template>
-  <div class="projects">
+  <div class="projects" id="projects">
     <b-container fluid>
       <b-row>
         <b-col class="mb-4 text-left">

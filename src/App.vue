@@ -7,6 +7,10 @@
 <style lang="scss">
 @import "/assets/main.scss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 #app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

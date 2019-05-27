@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="home" id="home">
     <b-container class="p-4" fluid>
       <b-row>
         <b-col md="8" class="mb-4 text-left">
@@ -18,7 +18,7 @@
             <img class="img-fluid" v-else src="../assets/fab-close.svg">
           </div>
           <!-- this is Menu.vue. overlays a full-screen nav menu that is fixed positioned -->
-          <nav-menu v-if="showMenu == true"></nav-menu>
+          <nav-menu v-if="showMenu == true" v-on:menu-item-clicked="toggleMenu()"></nav-menu>
         </b-col>
       </b-row>
 
