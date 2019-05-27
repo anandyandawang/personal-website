@@ -5,24 +5,18 @@
         <b-row>
           <b-col>
             <b-row>
-              <b-col>
-                <a href="#home" @click="emitClickedEvent()">
-                  <h2>home</h2>
-                </a>
+              <b-col @click="scrollToSection('home')">
+                <h2>home</h2>
               </b-col>
             </b-row>
             <b-row>
-              <b-col>
-                <a href="#about" @click="emitClickedEvent()">
-                  <h2>about</h2>
-                </a>
+              <b-col @click="scrollToSection('about')">
+                <h2>about</h2>
               </b-col>
             </b-row>
             <b-row>
-              <b-col>
-                <a href="#projects" @click="emitClickedEvent()">
-                  <h2>projects</h2>
-                </a>
+              <b-col @click="scrollToSection('projects')">
+                <h2>projects</h2>
               </b-col>
             </b-row>
           </b-col>
@@ -67,7 +61,16 @@ import Vue from "vue";
 export default Vue.extend({
   name: "nav-menu",
   methods: {
-    emitClickedEvent() {
+    scrollToSection(section: string) {
+      let sectionElement = document.getElementById(section);
+      if (sectionElement != null) {
+        let sectionElementPos = sectionElement.offsetTop;
+        window.scrollTo(0, sectionElementPos);
+      } else {
+        console.log(
+          "The element associated with the menu item is null / could not be found."
+        );
+      }
       this.$emit("menu-item-clicked"); // emit event to tell the home vue to close the menu
     }
   }
