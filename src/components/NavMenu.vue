@@ -6,17 +6,17 @@
           <b-col>
             <b-row>
               <b-col @click="scrollToSection('home')">
-                <h2>home</h2>
+                <div class="menu-item">home</div>
               </b-col>
             </b-row>
             <b-row>
               <b-col @click="scrollToSection('about')">
-                <h2>about</h2>
+                <div class="menu-item">about</div>
               </b-col>
             </b-row>
             <b-row>
               <b-col @click="scrollToSection('projects')">
-                <h2>projects</h2>
+                <div class="menu-item">projects</div>
               </b-col>
             </b-row>
           </b-col>
@@ -37,6 +37,40 @@
   width: 100vw;
   height: 100vh;
   background: rgba($background-highlight, 1);
+  text-align: left;
+  display: flex;
+  align-items: center;
+  padding-top: 10%;
+  padding-bottom: 10%;
+
+  padding-left: 18%;
+  padding-right: 18%;
+
+  @media (max-width: $screen-sm) {
+    padding-left: 14%;
+    padding-right: 14%;
+  }
+
+  @media (max-width: $screen-xs) {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .menu-item {
+    font-size: 100px !important;
+    font-family: "Poiret One", sans-serif !important;
+    letter-spacing: 24px;
+
+    @media (max-width: $screen-sm) {
+      font-size: 84px !important;
+      letter-spacing: 20px;
+    }
+
+    @media (max-width: $screen-xs) {
+      font-size: 64px !important;
+      letter-spacing: 14px;
+    }
+  }
 }
 
 .expand-enter,
@@ -61,6 +95,7 @@ import Vue from "vue";
 export default Vue.extend({
   name: "nav-menu",
   methods: {
+    // the section param must be one of the id's for the section that we want to scroll to
     scrollToSection(section: string) {
       let sectionElement = document.getElementById(section);
       if (sectionElement != null) {

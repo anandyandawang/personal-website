@@ -6,20 +6,6 @@
   color: $primary;
 }
 
-h1 {
-  font-size: 144px !important;
-  font-family: "Poiret One", sans-serif !important;
-  color: $primary;
-
-  @media (max-width: $screen-sm) {
-    font-size: 100px !important;
-  }
-
-  @media (max-width: $screen-xs) {
-    font-size: 72px !important;
-  }
-}
-
 h2 {
   font-size: 72px !important;
   font-family: "Poiret One", sans-serif !important;
