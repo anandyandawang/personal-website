@@ -21,8 +21,12 @@
             </b-row>
             <b-row class="social-media">
               <b-col>
-                <img class="img-fluid" src="../assets/linkedin.svg">
-                <img class="img-fluid" src="../assets/github.svg">
+                <a href="https://linkedin.com/in/andy-w-94b896126/" target="_blank">
+                  <img class="img-fluid" src="../assets/linkedin.svg">
+                </a>
+                <a href="https://github.com/AndyWang99" target="_blank">
+                  <img class="img-fluid" src="../assets/github.svg">
+                </a>
               </b-col>
             </b-row>
           </b-col>
