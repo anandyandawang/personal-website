@@ -119,6 +119,14 @@ export default Vue.extend({
   methods: {
     toggleMenu() {
       this.showMenu = !this.showMenu;
+      // also toggle the overflow attribute of the body
+      // this makes sure that when the menu is open, the background can't be scrolled
+      let bodyOverflowAttr = getComputedStyle(document.body, null).overflow;
+      if (bodyOverflowAttr != "hidden") {
+        document.body.style.overflow = "hidden";
+      } else {
+        document.body.style.overflow = "visible";
+      }
     }
   }
 });
