@@ -60,6 +60,10 @@ self.__precacheManifest = [
     "url": "/index.html"
   },
   {
+    "revision": "04729c4b9f73753d53612fac502cf2e6",
+    "url": "/CNAME"
+  },
+  {
     "revision": "363153364e58286fd0b333126d52a6b9",
     "url": "/projects/yikes.webp"
   },
