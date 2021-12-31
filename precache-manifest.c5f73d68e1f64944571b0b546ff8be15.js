@@ -60,7 +60,7 @@ self.__precacheManifest = [
     "url": "/index.html"
   },
   {
-    "revision": "04729c4b9f73753d53612fac502cf2e6",
+    "revision": "864fc03067806c9bf281260404a92749",
     "url": "/CNAME"
   },
   {
