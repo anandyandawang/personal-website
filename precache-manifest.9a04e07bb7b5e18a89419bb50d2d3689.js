@@ -60,19 +60,15 @@ self.__precacheManifest = [
     "url": "/index.html"
   },
   {
-    "revision": "864fc03067806c9bf281260404a92749",
-    "url": "/CNAME"
-  },
-  {
-    "revision": "b6216d61c03e6ce0c9aea6ca7808f7ca",
-    "url": "/robots.txt"
-  },
-  {
     "revision": "363153364e58286fd0b333126d52a6b9",
     "url": "/projects/yikes.webp"
   },
   {
     "revision": "3fa18bf03bfbb63af4111fe81d4a93a1",
     "url": "/projects/personal-website.png"
+  },
+  {
+    "revision": "b6216d61c03e6ce0c9aea6ca7808f7ca",
+    "url": "/robots.txt"
   }
 ];
