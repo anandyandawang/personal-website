@@ -1,39 +1,49 @@
 <template>
-  <transition name="expand">
-    <div class="nav-menu">
-      <b-container>
-        <b-row>
-          <b-col>
-            <b-row>
-              <b-col @click="scrollToSection('home')">
-                <div class="menu-item">HOME</div>
-              </b-col>
-            </b-row>
-            <b-row>
-              <b-col @click="scrollToSection('about')">
-                <div class="menu-item">ABOUT</div>
-              </b-col>
-            </b-row>
-            <b-row>
-              <b-col @click="scrollToSection('projects')">
-                <div class="menu-item">PROJECTS</div>
-              </b-col>
-            </b-row>
-            <b-row class="social-media">
-              <b-col>
-                <a href="https://linkedin.com/in/andy-w-94b896126/" target="_blank">
-                  <img class="img-fluid" src="../assets/linkedin.svg">
-                </a>
-                <a href="https://github.com/AndyWang99" target="_blank">
-                  <img class="img-fluid" src="../assets/github.svg">
-                </a>
-              </b-col>
-            </b-row>
-          </b-col>
-        </b-row>
-      </b-container>
-    </div>
-  </transition>
+  <div class="nav-menu">
+    <b-container>
+      <b-row>
+        <b-col>
+          <b-row>
+            <b-col>
+              <router-link to="/" @click.native="closeMenu" class="menu-item"
+                >HOME</router-link
+              >
+            </b-col>
+          </b-row>
+          <b-row>
+            <b-col>
+              <router-link
+                to="/about"
+                @click.native="closeMenu"
+                class="menu-item"
+                >ABOUT</router-link
+              >
+            </b-col>
+          </b-row>
+          <b-row>
+            <b-col>
+              <router-link
+                to="/projects"
+                @click.native="closeMenu"
+                class="menu-item"
+                >PROJECTS</router-link
+              >
+            </b-col>
+          </b-row>
+          <b-row class="social-media">
+            <b-col>
+              <a href="https://linkedin.com/in/anandyandawang/" target="_blank">
+                <img class="img-fluid" src="../assets/linkedin.svg" />
+              </a>
+              <a href="https://github.com/anandyandawang" target="_blank">
+                <img class="img-fluid" src="../assets/github.svg" />
+              </a>
+            </b-col>
+          </b-row>
+        </b-col>
+      </b-row>
+    </b-container>
+  </div>
 </template>
 
 <style lang="scss">
@@ -89,23 +99,7 @@
     }
   }
 }
-
-.expand-enter,
-.expand-leave-to {
-  transform: scale(0);
-}
-
-.expand-enter-active {
-  transition: transform 0.3s ease;
-  transform-origin: top right;
-}
-
-.expand-leave-active {
-  transition: transform 0.3s ease;
-  transform-origin: top right;
-}
 </style>
-
 
 <script lang="ts">
 import Vue from "vue";
@@ -124,7 +118,10 @@ export default Vue.extend({
         );
       }
       this.$emit("menu-item-clicked"); // emit event to tell the home vue to close the menu
-    }
-  }
+    },
+    closeMenu() {
+      this.$emit("closeMenu");
+    },
+  },
 });
 </script>

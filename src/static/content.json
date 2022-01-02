@@ -1,16 +1,36 @@
 {
-  "Portfolio": {
-    "name": "Portfolio",
-    "type": "Personal Website",
-    "desc": "A website that I created to showcase myself and some of the awesome projects that I have worked on. Personally designed by myself in Sketch, and built using HTML, CSS, and JavaScript with Bootstrap and Vue.js frameworks.",
-    "github": "https://github.com/AndyWang99/personal-website",
-    "imagePath": "/projects/personal-website.png"
+  "extend": {
+    "name": "Extend",
+    "type": "Screening Service",
+    "desc": {
+      "introduction": "In my final Waterloo internship, I worked at Extend. The key highlight during my time there was building an entire service that manages screening virtual card users.",
+      "main": "The service provides the user's personal information to a third-party API, which carries out the actual screening. The service stores the results of the screening into a PostgresQL database, and communicates back to Extend's main API backend whether or not the user has passed or failed the screening.",
+      "extra": "This is really just scratching the surface, and there are many more detailed parts to this, but I'd probably be in hot water if I elaborated any more than this.",
+      "conclusion": "I also don't have any pretty pictures to show, but just trust me bro. It was pretty neat and crazy. For now, you can enjoy our amazing logo instead.",
+      "tech": "Built with Kotlin and Spring Boot."
+    },
+    "imagePath": "/projects/extend-logo-bg.png"
   },
-  "YIKES!": {
+  "autoddit": {
+    "name": "autoddit",
+    "type": "Automatic Reddit Feed",
+    "desc": {
+      "introduction": "Simple. Fast. Automatic.",
+      "main": "There's a certain elegance to minimalism. Autoddit tries to capture this by providing you with the most basic Reddit experience available - no more random stuff plastered all over your screen. Just content and comments. That's really all you ever need anyway.",
+      "extra": "And because you didn't ask for it, autoddit also automatically transitions between posts. Have you ever found yourself eating from a bag of flaming hot cheetos with your hands and feeling absolutely defeated at your inability to scroll to the next post? No? Well at least now you can do both.",
+      "conclusion": "Check it out!! I promise there are cute dogs and cats :))",
+      "tech": "Built with Vue.js and the Reddit API."
+    },
+    "github": "https://github.com/anandyandawang/autoddit",
+    "imagePath": "/projects/autoddit.png"
+  },
+  "yikes!": {
     "name": "YIKES!",
     "type": "2D Arcade Game",
-    "desc": "An endless vertical runner where, you, the player, guides a ball through a maze of platforms by tilting and tapping on your phone. This game is also available in multiplayer! Created in Java using the LibGDX framework with the Box2D physics engine. Multiplayer support added using a Node.js server with Express.js and Socket.io.",
-    "github": "https://github.com/AndyWang99/YIKES",
+    "desc": {
+      "main": "An endless vertical runner where the player guides a ball through a maze of platforms by tilting and tapping on their phone. This game is also available in multiplayer! Created in Java using the LibGDX framework with the Box2D physics engine. Multiplayer support added using a Node.js server with Express.js and Socket.io."
+    },
+    "github": "https://github.com/anandyandawang/YIKES",
     "gplay": "https://play.google.com/store/apps/details?id=com.sodirea.yikes&hl=en_SG",
     "imagePath": "/projects/yikes.webp"
   }

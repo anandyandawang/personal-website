@@ -1,0 +1,19 @@
+{
+  "about": {
+    "subtitle": "It's me, Andy!",
+    "paragraphs": {
+      "introduction": {
+        "content": "Hello, hello! To whoever is reading this, I hope you're having a wonderful day. Thanks for taking the time to check my website out."
+      },
+      "main": {
+        "content": "I'm currently a 4th year student studying Computer Science at the University of Waterloo. In my most recent (also final) internship with Extend, I worked as a backend developer on their virtual card platform. In this internship, I built an entire service that manages screening virtual card users. Crazy, right?"
+      },
+      "hobbies": {
+        "content": "But that's not all there is to me. When I'm not building crazy things with brilliant people, I'm probably gaming. Genshin Impact has truly been a gift sent from above. I also really enjoy playing basketball and badminton whenever the crew is available 😎."
+      },
+      "conclusion": {
+        "content": "Thanks for reading! If you've found me interesting enough and want to chat with me, feel free to connect on LinkedIn, linked below along with my GitHub."
+      }
+    }
+  }
+}

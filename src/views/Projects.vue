@@ -1,7 +1,10 @@
 <template>
   <div class="projects" id="projects">
-    <b-container fluid>
+    <b-container class="projects-container" fluid>
       <b-row>
+        <nav-bar class="mb-4"></nav-bar>
+      </b-row>
+      <b-row class="projects-content">
         <b-col class="mb-4 text-left">
           <b-row class="mb-4">
             <b-col>
@@ -17,26 +20,24 @@
           md="6"
           class="mb-5 text-left project-pic-container"
         >
-          <div v-b-modal="'project-modal' + project.name">
+          <div v-b-modal="project.name">
             <div class="px-5">
-              <img class="img-fluid project-pic" :src="project.imagePath">
+              <img class="img-fluid project-pic" :src="project.imagePath" />
             </div>
             <div class="project-caption">
-              <h3>{{project.name}}</h3>
-              <p>{{project.type}}</p>
+              <h3>{{ project.name }}</h3>
+              <p>{{ project.type }}</p>
             </div>
           </div>
 
           <b-modal
-            :id="'project-modal' + project.name"
+            :id="project.name"
             size="lg"
-            hide-header="true"
-            hide-footer="true"
+            v-bind:hide-header="true"
+            v-bind:hide-footer="true"
+            body-class="p-0"
           >
             <project-clicked :project="project"></project-clicked>
-            <div class="px-5 mb-3">
-              <b-button variant="primary" @click="hideModal('project-modal' + project.name)">Close</b-button>
-            </div>
           </b-modal>
         </b-col>
       </b-row>
@@ -48,11 +49,23 @@
 @import "../assets/main.scss";
 @import "../assets/variables.scss";
 .projects {
+  min-height: 100vh;
   background-color: $background;
-  padding-top: 18%;
-  padding-bottom: 18%;
-  padding-left: 7%;
-  padding-right: 7%;
+
+  .projects-container {
+    height: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+
+  .projects-content {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 8%;
+    padding-right: 8%;
+  }
 
   .project-pic-container {
     display: flex;
@@ -88,15 +101,17 @@
 <script lang="ts">
 import Vue from "vue";
 import ProjectClicked from "@/components/ProjectClicked.vue";
+import NavBar from "@/components/NavBar.vue";
 var json = require("@/static/content.json");
 export default Vue.extend({
   name: "projects",
   components: {
-    ProjectClicked
+    ProjectClicked,
+    NavBar,
   },
   data() {
     return {
-      json: {}
+      json: {},
     };
   },
   mounted() {
@@ -106,8 +121,7 @@ export default Vue.extend({
   methods: {
     hideModal(id: any) {
       this.$root.$emit("bv::hide::modal", id);
-    }
-  }
+    },
+  },
 });
 </script>
-
