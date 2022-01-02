@@ -6,7 +6,9 @@ import Projects from "./views/Projects.vue";
 
 Vue.use(Router);
 
-export default new Router({
+const DEFAULT_TITLE = 'Andy Wang';
+
+const router = new Router({
   mode: "history",
   base: process.env.BASE_URL,
   routes: [
@@ -18,12 +20,26 @@ export default new Router({
     {
       path: "/about",
       name: "about",
-      component: About
+      component: About,
+      meta: {
+        title: DEFAULT_TITLE + "- About"
+      }
     },
     {
       path: "/projects",
       name: "projects",
-      component: Projects
+      component: Projects,
+      meta: {
+        title: DEFAULT_TITLE + "- Projects"
+      }
     }
   ]
 });
+
+router.afterEach((to, from) => {
+    Vue.nextTick(() => {
+        document.title = to.meta && to.meta.title || DEFAULT_TITLE;
+    });
+});
+
+export default router;
