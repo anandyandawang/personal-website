@@ -1,7 +1,8 @@
 @import "./variables.scss";
 @import url("https://fonts.googleapis.com/css?family=Oxygen|Poiret+One");
 
-#app {
+#app,
+div[id*="BV_modal"] {
   font-family: "Oxygen", sans-serif;
   color: $primary;
 }
@@ -51,4 +52,21 @@ h3 {
       background: $secondary !important;
     }
   }
+}
+
+a:link {
+  color: $primary !important;
+  text-decoration: none !important;
+}
+a:visited {
+  color: $primary !important;
+  text-decoration: none !important;
+}
+a:hover {
+  color: $primary !important;
+  text-decoration: none !important;
+}
+a:active {
+  color: $primary !important;
+  text-decoration: none !important;
 }

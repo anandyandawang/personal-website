@@ -1,31 +1,43 @@
 <template>
   <div class="about" id="about">
-    <b-container fluid>
-      <b-row>
-        <b-col class="mb-4 text-left">
-          <b-row class="mb-4">
+    <b-container class="about-container" fluid>
+      <b-row><nav-bar class="mb-4"></nav-bar></b-row>
+      <b-row class="about-content">
+        <b-col md="8" class="mb-4 text-left">
+          <b-row>
             <b-col>
-              <h2>ABOUT&nbsp;ME</h2>
+              <h2>ABOUT</h2>
             </b-col>
           </b-row>
           <b-row class="mb-3">
             <b-col>
-              <h3>Developer.&nbsp;Wanderer.</h3>
+              <h3>{{ json.about.subtitle }}</h3>
             </b-col>
           </b-row>
-          <b-row>
+          <b-row v-for="paragraph in json.about.paragraphs" :key="paragraph">
             <b-col>
-              <p>Hi there! I'm a second year student studying Computer Science at the University of Waterloo. I have a keen interest in bringing responsive web applications to life in the browser with HTML, CSS, and JavaScript.</p>
+              <p>
+                {{ paragraph.content }}
+              </p>
             </b-col>
           </b-row>
-          <b-row>
+          <b-row class="my-3">
             <b-col>
-              <p>On my spare time, I love to take long walks and jogs around my neighbourhood as well as on community trails. I am also just beginning to dip my feet into learning visual art.</p>
+              <a
+                href="https://linkedin.com/in/anandyandawang/"
+                target="_blank"
+                class="mr-3"
+              >
+                <img class="img-fluid" src="../assets/linkedin.svg" />
+              </a>
+              <a href="https://github.com/anandyandawang" target="_blank">
+                <img class="img-fluid" src="../assets/github.svg" />
+              </a>
             </b-col>
           </b-row>
         </b-col>
-        <b-col class="text-right">
-          <img class="img-fluid portrait" src="../assets/portrait.jpg">
+        <b-col md="4" class="text-right">
+          <img class="img-fluid portrait" src="../assets/portrait.jpg" />
         </b-col>
       </b-row>
     </b-container>
@@ -36,14 +48,26 @@
 @import "../assets/main.scss";
 @import "../assets/variables.scss";
 .about {
+  min-height: 100vh;
   background-color: $background;
-  padding-top: 18%;
-  padding-bottom: 18%;
-  padding-left: 14%;
-  padding-right: 14%;
+
+  .about-container {
+    height: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+
+  .about-content {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 8%;
+    padding-right: 8%;
+  }
 
   .portrait {
-    opacity: 0.5;
+    opacity: 0.8;
     min-width: 200px;
   }
 }
@@ -51,8 +75,20 @@
 
 <script lang="ts">
 import Vue from "vue";
+import NavBar from "../components/NavBar.vue";
+var json = require("@/static/about.json");
 export default Vue.extend({
-  name: "about"
+  name: "about",
+  components: {
+    NavBar,
+  },
+  data() {
+    return {
+      json: {},
+    };
+  },
+  mounted() {
+    this.json = json;
+  },
 });
 </script>
-

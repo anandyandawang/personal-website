@@ -15,7 +15,7 @@ export default Vue.extend({
   components: {
     Home,
     About,
-    Projects
-  }
+    Projects,
+  },
 });
 </script>

@@ -36,16 +36,16 @@ var json = require("@/static/content.json");
 export default Vue.extend({
   name: "HelloWorld",
   props: {
-    msg: String
+    msg: String,
   },
   data() {
     return {
-      json: {}
+      json: {},
     };
   },
   mounted() {
     this.json = json;
     console.log(json);
-  }
+  },
 });
 </script>

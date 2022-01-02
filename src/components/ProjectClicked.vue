@@ -2,39 +2,48 @@
   <div class="project-clicked">
     <b-container class="p-4" fluid>
       <b-row>
-        <b-col class="mb-4 text-left">
+        <b-col lg="7" class="mb-4 text-left">
           <b-row>
             <b-col>
-              <h2>{{project.name}}</h2>
+              <h2>{{ project.name }}</h2>
             </b-col>
           </b-row>
           <b-row class="mb-3">
             <b-col>
-              <h3>{{project.type}}</h3>
+              <h3>{{ project.type }}</h3>
             </b-col>
           </b-row>
           <b-row>
             <b-col>
-              <p>{{project.desc}}</p>
+              <p v-for="desc in project.desc" v-bind:key="desc">
+                {{ desc }}
+              </p>
             </b-col>
           </b-row>
           <b-row>
             <b-col>
-              <a :href="project.github" target="_blank">
-                <p>Checkout the GitHub repo here!</p>
+              <a
+                v-if="project.github != null"
+                :href="project.github"
+                target="_blank"
+                class="mr-3"
+              >
+                <img class="img-fluid" src="../assets/github.svg" />
               </a>
-            </b-col>
-          </b-row>
-          <b-row v-if="project.gplay != null">
-            <b-col>
-              <a :href="project.gplay" target="_blank">
-                <p>Checkout the app on Google Play here!</p>
+              <a
+                v-if="project.gplay != null"
+                :href="project.gplay"
+                target="_blank"
+              >
+                <img class="img-fluid" src="../assets/google-play.svg" />
               </a>
             </b-col>
           </b-row>
         </b-col>
-        <b-col class="text-right">
-          <img class="img-fluid project-image" :src="project.imagePath">
+        <b-col lg="5" class="text-right">
+          <a :href="project.imagePath" target="_blank">
+            <img class="img-fluid project-image" :src="project.imagePath" />
+          </a>
         </b-col>
       </b-row>
     </b-container>
@@ -64,8 +73,8 @@ export default Vue.extend({
   props: {
     project: {
       type: Object,
-      required: true
-    }
-  }
+      required: true,
+    },
+  },
 });
 </script>
