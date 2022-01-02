@@ -1,10 +1,10 @@
 self.__precacheManifest = [
   {
-    "revision": "e188af3369c2c77e04cf",
+    "revision": "b5aeb3f88f4a3549172f",
     "url": "/app.css"
   },
   {
-    "revision": "e188af3369c2c77e04cf",
+    "revision": "b5aeb3f88f4a3549172f",
     "url": "/app.js"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = [
     "url": "/img/ANDY.svg"
   },
   {
-    "revision": "eee3e3266dbc73769241d915b8a5d00e",
-    "url": "/img/logo2.svg"
+    "revision": "b9a15e7e1080717a43f1ffdbf204c74d",
+    "url": "/img/google-play.svg"
   },
   {
     "revision": "2396850e13facd71d7c185e1bdf8586a",
@@ -30,14 +30,6 @@ self.__precacheManifest = [
   {
     "revision": "32c623d0d6ad63888cd8528f90f6e29f",
     "url": "/img/github.svg"
-  },
-  {
-    "revision": "22f3854e821cb08c40d86c5df9b0a6b1",
-    "url": "/img/fab.svg"
-  },
-  {
-    "revision": "b6476b1809dd21e1236da5bf4401f183",
-    "url": "/img/fab-close.svg"
   },
   {
     "revision": "9aa86a38faf1f86872f3536f0c62ccde",
@@ -64,15 +56,27 @@ self.__precacheManifest = [
     "url": "/CNAME"
   },
   {
-    "revision": "363153364e58286fd0b333126d52a6b9",
-    "url": "/projects/yikes.webp"
+    "revision": "3da30b3a8c046b9c84375c987ed0c7b1",
+    "url": "/projects/extend-logo-bg.png"
+  },
+  {
+    "revision": "7d5c43af406b5694abc981fb370d3734",
+    "url": "/projects/extend-logo.png"
   },
   {
     "revision": "3fa18bf03bfbb63af4111fe81d4a93a1",
     "url": "/projects/personal-website.png"
   },
   {
+    "revision": "363153364e58286fd0b333126d52a6b9",
+    "url": "/projects/yikes.webp"
+  },
+  {
     "revision": "b6216d61c03e6ce0c9aea6ca7808f7ca",
     "url": "/robots.txt"
+  },
+  {
+    "revision": "715dd1e9eebb9f33e61d4cf7f410e482",
+    "url": "/projects/autoddit.png"
   }
 ];
