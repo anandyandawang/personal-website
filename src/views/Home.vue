@@ -46,6 +46,7 @@
     flex: 1;
     display: flex;
     align-items: center;
+    justify-content: center;
     min-width: 0;
     min-height: 0;
   }
