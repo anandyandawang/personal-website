@@ -1,10 +1,10 @@
 self.__precacheManifest = [
   {
-    "revision": "d213e33943339d858d9b",
+    "revision": "6a2efb20f1ba3ff66218",
     "url": "/app.css"
   },
   {
-    "revision": "d213e33943339d858d9b",
+    "revision": "6a2efb20f1ba3ff66218",
     "url": "/app.js"
   },
   {
@@ -56,12 +56,16 @@ self.__precacheManifest = [
     "url": "/CNAME"
   },
   {
+    "revision": "7d5c43af406b5694abc981fb370d3734",
+    "url": "/projects/extend-logo.png"
+  },
+  {
     "revision": "3da30b3a8c046b9c84375c987ed0c7b1",
     "url": "/projects/extend-logo-bg.png"
   },
   {
-    "revision": "7d5c43af406b5694abc981fb370d3734",
-    "url": "/projects/extend-logo.png"
+    "revision": "b6216d61c03e6ce0c9aea6ca7808f7ca",
+    "url": "/robots.txt"
   },
   {
     "revision": "3fa18bf03bfbb63af4111fe81d4a93a1",
@@ -70,10 +74,6 @@ self.__precacheManifest = [
   {
     "revision": "363153364e58286fd0b333126d52a6b9",
     "url": "/projects/yikes.webp"
-  },
-  {
-    "revision": "b6216d61c03e6ce0c9aea6ca7808f7ca",
-    "url": "/robots.txt"
   },
   {
     "revision": "715dd1e9eebb9f33e61d4cf7f410e482",
